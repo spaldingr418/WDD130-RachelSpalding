@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images of Christ</title>
+    <style>
+        body {
+            background: black;
+        }
+        #wrapper{
+            width: 600px;
+            margin: 0 auto;
+        }
+        nav {
+            color: white;
+            text-align: center;
+            font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #gallery{
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            border: 15px solid rgb(255, 255, 255);
+            width: 100%;
+            background-color: #ddd;
+            background-image:
+                linear-gradient(45deg, #ccc 26%, transparent 26%), 
+                linear-gradient(135deg, #ccc 26%, transparent 26%),
+                linear-gradient(45deg, transparent 75%, #ccc 75%),
+                linear-gradient(135deg, transparent 75%, #ccc 75%);
+            background-size: 20px 20px; /* Must be a square */
+            background-position: 0 0, 10px 0, 10px -10px, 0px 10px; 
+            
+        }
+        #gallery a {
+            cursor: url('images/christus.png'), pointer;
+        }
+        #gallery img {
+            /* make a thumbnail of the image that is 200x300 
+               instead of using width and height here to help the page load faster */
+
+            opacity:50%;
+            display:block;
+        }
+        #gallery img:hover{
+            opacity: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <h1>Christ Art Gallery</h1>
+        </nav>
+        <main>
+            <div id="gallery">
+                <a href="images/big/img1.jpg"><img src="images/small/img1.jpg" alt="Christ praying with the Nephites" ></a>
+                <a href="images/big/img2.jpg"><img src="images/small/img2.jpg" alt="Jesus the Christ" ></a>
+                <a href="images/big/img3.jpg"><img src="images/small/img3.jpg" alt="Jesus Raising the Daughter of Jairus" ></a>
+                <a href="images/big/img4.jpg"><img src="images/small/img4.jpg" alt="The Lord Appears in the Kirtland Temple" ></a>
+                <a href="images/big/img5.jpg"><img src="images/small/img5.jpg" alt="Crucifixion of Jesus Christ" ></a>
+                <a href="images/big/img6.jpg"><img src="images/small/img6.jpg" alt="Jesus Calms the Storm" ></a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
