@@ -1,0 +1,51 @@
+body {
+    font-family: Verdana, arial;
+    background-color: #F2A516;
+    color: #59310E;
+    margin-left:45px;
+    margin-right: 45px;
+}
+
+header {
+    border-bottom: ridge 10px #59310E;
+}
+
+ul {
+    list-style-type: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Lucida Handwriting";
+    font-weight: 800;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    border: double 5px #59310E;
+    font-weight: 700;
+}
+
+p {
+    text-align:center;
+}
+
+footer {
+    text-align: end;
+    padding-top: 10px;
+    border-top: ridge 10px #59310E
+}
